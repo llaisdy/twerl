@@ -12,6 +12,9 @@ dev: compile
 eunit: compile
 	./rebar eunit app=twerl
 
+espec: compile
+	erl -pa deps/*/ebin -pa ebin -s inets start -eval 'espec:run([stream_client_spec,stream_client_util_spec]), halt().'
+
 clean:
 	./rebar clean
 	rm -Rf .eunit

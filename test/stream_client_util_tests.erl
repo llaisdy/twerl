@@ -1,4 +1,4 @@
--module(stream_client_util_test).
+-module(stream_client_util_tests).
 
 -include_lib("eunit/include/eunit.hrl").
 
